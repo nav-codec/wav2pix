@@ -4,4 +4,4 @@ train_audios_path: dataset/train/jaimealtozano
 
 # inference pickle files path:
 inference_faces_path: dataset/test/javiermuniz
-inference_audios_path: 
+inference_audios_path: dataset/train/javiermuniz
