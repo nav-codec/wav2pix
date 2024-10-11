@@ -1,6 +1,6 @@
 # training pickle files path:
 train_faces_path: dataset/test/jaimealtozano
-train_audios_path: 
+train_audios_path: dataset/train/jaimealtozano
 
 # inference pickle files path:
 inference_faces_path: 
