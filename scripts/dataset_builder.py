@@ -25,14 +25,12 @@ class dataset_builder(Dataset):
             self.faces = pickle.load(open(config['train_faces_path'], 'rb'))
             self.audios = pickle.load(open(config['train_audios_path'], 'rb'))
 
-            print 'Total amount of training samples: {0} faces | {1} audios '.format(len(self.faces),len(self.audios))
-            print
+            print('Total amount of training samples: {0} faces | {1} audios '.format(len(self.faces),len(self.audios)))
         else:
             self.faces = pickle.load(open(config['inference_faces_path'], 'rb'))
             self.audios = pickle.load(open(config['inference_audios_path'], 'rb'))
 
-            print 'Total amount of inference samples: {0} faces | {1} audios '.format(len(self.faces),len(self.audios))
-            print
+            print('Total amount of inference samples: {0} faces | {1} audios '.format(len(self.faces),len(self.audios)))
 
         # initializing some useful variables
         self.audio_samples = audio_seconds * 16000 #desired audio_samples to work with for each .wav file
