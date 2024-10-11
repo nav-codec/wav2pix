@@ -18,7 +18,7 @@ class dataset_builder(Dataset):
 
         # opening the file that contains the path with the images/audios.
         with open('config.yaml', 'r') as file:
-            config = yaml.load(file)
+            config = yaml.load(file, Loader=yaml.FullLoader)
 
         # selecting the paths for the images/audios we will work with according to whether we are training or testing
         if not inference:
