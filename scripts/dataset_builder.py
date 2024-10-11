@@ -1,5 +1,5 @@
 from torch.utils.data import Dataset, DataLoader
-import cPickle as pickle
+import pickle
 import numpy as np
 from PIL import Image
 import torch
